@@ -1,4 +1,4 @@
-import computer from "../assets/computer.jpg"
+
 const links = [
   { name: 'About', href: '#aboutme' },
   { name: 'Projects', href: '#project' },
@@ -60,7 +60,7 @@ export default function HeaderComponent() {
           UI/UX obsessed.  Front-end expert. Back-end reliable. Full-stack capable.
           </p>
           <p className="mt-1 text-medium font-medium text-pretty text-gray-400 sm:text-l/8">
-          After a decade of breaking things as a test engineer, I'm now building thoughtful, user-centric web apps from scratch.
+          After a decade of breaking things as a test engineer, I am now building thoughtful, user-centric web apps from scratch.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
