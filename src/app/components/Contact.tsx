@@ -66,7 +66,7 @@ const Contact = () => {
         <path d="M9 2a1 1 0 00-1 1v1H5a2 2 0 00-2 2v9a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2h-3V3a1 1 0 00-1-1H9zM8 4v1h4V4H8z" />
       </svg>
       <a
-        href="Files/KarenCadavos_Resume.pdf" // or your hosted resume URL
+        href="files/KarenCadavos_Resume.pdf" 
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-[#F7B5E1] font-medium"
