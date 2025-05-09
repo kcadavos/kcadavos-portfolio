@@ -1,9 +1,16 @@
-
-const links = [
-  { name: 'About', href: '#aboutme' },
-  { name: 'Projects', href: '#project' },
-  { name: 'Achievements', href: '#achievement' },
-  { name: 'Contact', href: '#contact' },
+import { IconDefinition, faAward, faEnvelope, faFolderClosed, faUser } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+type LinkItem = {
+  name: string
+  href: string
+  icon: IconDefinition
+  hoverColor: string 
+}
+const links: LinkItem[] = [
+  { name: 'About', href: '#aboutme',icon:faUser, hoverColor:'hover:text-blue-500' },
+  { name: 'Project', href: '#project',icon:faFolderClosed, hoverColor:'hover:text-teal-400' },
+  { name: 'Achievement', href: '#achievement',icon:faAward,hoverColor:'hover:text-[#547EFF]' },
+  { name: 'Connect', href: '#contact',icon:faEnvelope, hoverColor:'hover:text-[#ff9ef7]' },
 ]
 const stats = [
   { name: 'Years of Tech Industry Experience', value: '10' },
@@ -25,8 +32,7 @@ export default function HeaderComponent() {
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <img
         alt=""
-        // src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-       src ="../assets/computer01.jpg"
+         src ="../assets/computer01.jpg"
         className="absolute   inset-0 -z-10 size-full object-cover object-right md:object-center"
       />
       <div
@@ -57,7 +63,7 @@ export default function HeaderComponent() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Karen Cadavos</h2>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-          UI/UX obsessed.  Front-end expert. Back-end reliable. Full-stack capable.
+          UI/UX obsessed.  Front-end inclined. Back-end reliable. Full-stack capable.
           </p>
           <p className="mt-1 text-medium font-medium text-pretty text-gray-400 sm:text-l/8">
           After a decade of breaking things as a test engineer, I am now building thoughtful, user-centric web apps from scratch.
@@ -66,8 +72,9 @@ export default function HeaderComponent() {
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
             {links.map((link) => (
-              <a key={link.name} href={link.href}>
-                {link.name} <span aria-hidden="true">&rarr;</span>
+              <a key={link.name} href={link.href} 
+              className={`flex items-center gap-2 transition-colors duration-200 ${link.hoverColor || ''}`}>
+                {link.name} <span aria-hidden="true"><FontAwesomeIcon icon={link.icon}/></span>
               </a>
             ))}
           </div>

@@ -1,6 +1,5 @@
 // components/AboutMe.tsx
-
-export default function AboutMe() {
+const AboutMe=()=> {
     return (
       <div id="aboutme" className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -39,3 +38,6 @@ export default function AboutMe() {
       </div>
     );
   }
+  
+
+  export default AboutMe
