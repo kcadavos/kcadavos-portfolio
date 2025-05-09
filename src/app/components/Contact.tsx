@@ -30,9 +30,7 @@ const Contact = () => {
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                   Connect With Me
                 </p>
-                <p className="mt-6 text-lg text-gray-300">
-                  I’m active on the following:
-                </p>
+                
   
                 <ul className="mt-6 space-y-4 text-lg text-gray-300 ps-10">
                   <li ><div className='flex gap-2 items-center'>
@@ -62,6 +60,21 @@ const Contact = () => {
                     </div>
                    
                   </li>
+                  <li>
+    <div className='flex gap-2 items-center'>
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#ff9ef7]" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M9 2a1 1 0 00-1 1v1H5a2 2 0 00-2 2v9a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2h-3V3a1 1 0 00-1-1H9zM8 4v1h4V4H8z" />
+      </svg>
+      <a
+        href="Files/KarenCadavos_Resume.pdf" // or your hosted resume URL
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-[#F7B5E1] font-medium"
+      >
+        View Resume
+      </a>
+    </div>
+  </li>
                 </ul>
   
                 <p className="mt-10 text-sm text-gray-500">
