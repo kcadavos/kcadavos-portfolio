@@ -78,7 +78,7 @@ export default function HeaderComponent() {
               </a>
             ))}
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4 items-start">
+          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-6 items-start">
             {stats.map((stat,index) => (
               <div key={index} className="flex flex-col-reverse gap-1 ">
                 <div  className=" text-xl text-blue-200">{stat.name}</div>

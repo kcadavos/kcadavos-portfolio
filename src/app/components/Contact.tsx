@@ -12,7 +12,7 @@ const Contact = () => {
         <section className="bg-gray-900 py-24 text-white">
           <div className="text-center px-6">
             <h2 className="text-4xl font-semibold mb-4">Thanks for reaching out!</h2>
-            <p className="text-lg text-gray-300">I'll get back to you soon.</p>
+            <p className="text-lg text-gray-300">I will get back to you soon.</p>
           </div>
         </section>
       )

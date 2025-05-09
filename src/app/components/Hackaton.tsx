@@ -27,7 +27,7 @@ const features = [
 const Hackaton = () => {
   return (
     <section id="achievement" className="py-24 px-6 md:px-20 bg-white text-[#0D1117]" >
-    <div className="grid md:grid-cols-2 gap-12 items-start">
+    <div className="grid md:grid-cols-2 gap-12 ">
       {/* Image Grid */}
       <div className="grid grid-cols-2 gap-4">
         <img
@@ -52,49 +52,46 @@ const Hackaton = () => {
         />
       </div>
 
-      {/* Text Content */}
-      <div className='lg:pt-4 lg:pr-8'>
-      <h2 className="text-base font-semibold text-[#547EFF]">Achievement </h2>
-  
-           <p className="mt-2 text-4xl font-semibold tracking-tight text-black sm:text-5xl ">
-                3rd Place Hackaton winner
-              </p>
-              <div className='lg:max-w-lg'>
+      <div className="flex items-center  lg:pr-8">
+  <div>
+    <h2 className="text-base font-semibold text-[#547EFF]">Achievement </h2>
+    <p className="mt-2 text-4xl font-semibold tracking-tight text-black sm:text-5xl ">
+      3rd Place Hackaton winner
+    </p>
 
-        <p className="mt-6 text-lg text-gray-700">
-          I joined <strong>Team Liquid Logic</strong> to compete in the <em>San Joaquin County H20 Hackathon</em>, where we tackled a challenge focused on sustainable water usage.
-          Our goal was to design a solution that helped households upgrade to more efficient appliances—within their budget and with clarity.
-        </p>
+    <div className="lg:max-w-lg">
+      <p className="mt-6 text-lg text-gray-700">
+        I joined <strong>Team Liquid Logic</strong> to compete in the <em>San Joaquin County H20 Hackathon</em>, where we tackled a challenge focused on sustainable water usage.
+        Our goal was to design a solution that helped households upgrade to more efficient appliances—within their budget and with clarity.
+      </p>
 
-        <p className=" text-gray-700 mt-6 text-lg">
-          Over a fast-paced weekend, I participated in the <strong>ideation</strong>, <strong>feature design</strong>, 
-          and <strong>UI prototyping in Figma</strong>. We built a  web app prototype that blended AI-driven guidance with real-time data to empower users.
-        </p>
-              </div>
+      <p className="text-gray-700 mt-6 text-lg">
+        Over a fast-paced weekend, I participated in the <strong>ideation</strong>, <strong>feature design</strong>, and <strong>UI prototyping in Figma</strong>.
+        We built a web app prototype that blended AI-driven guidance with real-time data to empower users.
+      </p>
+    </div>
 
-        <div className=" text-gray-700 mt-10 max-w-xl space-y-8 text-base lg:max-w-none">
-          <p className="font-semibold mb-2">Our Idea:</p>
-      
+    <div className="text-gray-700 mt-10 max-w-xl space-y-8 text-base lg:max-w-none">
+      <p className="font-semibold mb-2">Our Idea:</p>
 
-          <dl className="mt-10 max-w-xl space-y-8 text-base text-black-400 lg:max-w-none">
-                {features.map((feature) => (
-                  <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-black">
-                      {/* <feature.icon aria-hidden="true" className="absolute top-1 left-1 size-5 text-teal-400" /> */}
-                      {feature.name}
-                    </dt>{' '}
-                    <dd className="inline">{feature.description}</dd>
-                  </div>
-                ))}
-              </dl>
-        </div>
+      <dl className="mt-10 max-w-xl space-y-8 text-base text-black-400 lg:max-w-none">
+        {features.map((feature) => (
+          <div key={feature.name} className="relative pl-9">
+            <dt className="inline font-semibold text-black">
+              {feature.name}
+            </dt>{' '}
+            <dd className="inline">{feature.description}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
 
-        <p className="text-lg text-gray-700 pt-10">
-          Out of <strong>25+ teams</strong>, we proudly took home <span className="font-semibold">3rd Place</span>. 
- It was a proud moment that reinforced my passion 
-          for meaningful, practical tech.
-        </p>
-      </div>
+    <p className="text-lg text-gray-700 pt-10">
+      Out of <strong>25+ teams</strong>, we proudly took home <span className="font-semibold">3rd Place</span>.
+      It was a proud moment that reinforced my passion for meaningful, practical tech.
+    </p>
+  </div>
+</div>
     </div>
   </section>
   )
