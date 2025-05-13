@@ -18,7 +18,7 @@ const stats = [
   { 
     name: (
       <>
-        Place Hackathon <br /> Winner
+        Place Hackathon  Winner
       </>
     ), 
     value: '3rd' 
