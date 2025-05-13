@@ -16,11 +16,7 @@ const stats = [
   { name: 'Years of Tech Industry Experience', value: '10' },
   { name: 'Hrs of Project-based Application Development Training', value: '1000+' },
   { 
-    name: (
-      <>
-        Place Hackathon  Winner
-      </>
-    ), 
+    name: 'Place Hackathon  Winner', 
     value: '3rd' 
   },
 
